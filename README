@@ -1,3 +1,17 @@
-A collection of scripts to communicate with an XYZPrinter
+A collection of scripts to communicate with an XYZPrinter DaVinci under Linux
+
+See notes.txt for a braindump.
+
+This set of tools was brought about by a few observations of how the XYZWare communicates with the DaVinci Printer. 
+
+I noticed that the driver was simply a serial port driver, so I loaded up some sniffing software and dumped the communications between the printer and the computer. 
+
+So far, I've been doing educated guesses and slow slogging through the log file, but it's slowly revealing its secrets.
+
+I now know how to get the machine info, and some various details. However, much of what is returned is still unknown to me.
+
+If you want to help out, please do! This is horridly messy code that is cobbled together, and I'm no expert programmer. I'm still in the testing stages, but my end goal is a easy to use Python program that can send any Slic3r Gcode (and possibly others) to the DaVinci, thus bypassing the need for the XYZWare and Windows/Mac.
+
+
 
 
