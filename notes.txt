@@ -1,0 +1,32 @@
+## Header info
+; filename = composition.3w
+; machine = daVinciF10
+; material = default
+; layer_height = 0.2
+; fill_density = 0.30
+; shells = 2
+; speed = 45
+; total_layers = 196
+; total_filament = 12229.54
+; dimension = 132.83:104.82:39.35
+; extruder = 1
+
+
+##CKSum Notes
+640 lines, 16 bytes = 10240 bytes
+last four bytes is CKSum
+
+make sure last bytes don't have a linefeed!!!
+
+
+First cksum 00 08 04 23 =  525347d
+2nd cksum = 510438
+
+
+## Upload notes:
+Seems to have Windows LineEndinges (\cr\lf)
+
+
+
+
+

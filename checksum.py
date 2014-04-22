@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-file = "first10236bytes.txt"
-file2 = "secondbytes.txt"
+file = "testfiles/first10236bytes.txt"
+file2 = "testfiles/secondbytes.txt"
 
 ckfile = open(file, 'r')
 ck2file = open(file2, 'r')
