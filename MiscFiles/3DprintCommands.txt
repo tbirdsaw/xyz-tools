@@ -1,0 +1,25 @@
+Notes on 3D Printer
+
+Open at 115200,8, no parity, no stop bits
+Flow Control: XON/XOFF
+
+Send: XYZ_@3D:.
+Resp: XYZ_@3D:start.MDU:daVinciF10.FW_V:1.1.I.MCH_ID:3DP01PUS5TH42C0262.PROTOCOL:2.
+
+Send: XYZ_@3D:6.
+Resp: EE1:5a,41,570000,343243,120000,87337,210,90,5448,5553,30313332,52.
+
+Send: XYZ_@3D:5.
+Resp: MCHLIFE:1203.MCHEXDUR_LIFE:1230.
+
+Send: XYZ_@3D:8.
+Resp: WORK_PARSENT:0
+WORK_TIME:0
+EST_TIME:0
+ET0:25
+BT:28
+MCH_STATE:26
+
+-----
+Log file:
+About -> Machine state -> 

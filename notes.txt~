@@ -19,13 +19,23 @@ last four bytes is CKSum
 make sure last bytes don't have a linefeed!!!
 
 
-First cksum 00 08 04 23 =  525347d
+First cksum 00 08 04 23 =  525347 d
 2nd cksum = 510438
 
 
 ## Upload notes:
 Seems to have Windows LineEndinges (\cr\lf)
 
+## Current status:
+Trying to append a checksum to a chunked file... need to figure out how to do this.
 
+
+## Task List:
+Create Uploader:
+	Add Header if needed
+	chunk into 10236 bytes + 4 byte checksum
+	figure out checksum - done
+	
+		
 
 

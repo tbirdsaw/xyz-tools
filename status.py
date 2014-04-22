@@ -37,6 +37,16 @@ def readFile():
 	for line in gcode:
 		print '.' + line.strip(),
 
+def checkSum(st):
+	return sum(ord(c) for c in st)
+
+def generateChunk():
+	# Reset file to beginning, just in case
+	gcode.seek(0)
+	print dataChunk = gcode.read(10236);
+	print checkSum(dataChunk);
+
+		
 
 # Open our serialport
 
@@ -70,5 +80,5 @@ print sio.read()
 #sio.flush()
 #print sio.read()
 
-readFile()
+generateChunk()
 
