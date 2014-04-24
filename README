@@ -13,5 +13,12 @@ I now know how to get the machine info, and some various details. However, much 
 If you want to help out, please do! This is horridly messy code that is cobbled together, and I'm no expert programmer. I'm still in the testing stages, but my end goal is a easy to use Python program that can send any Slic3r Gcode (and possibly others) to the DaVinci, thus bypassing the need for the XYZWare and Windows/Mac.
 
 
+File listing:
+checksum.py - Generates a checksum given a chunk of data. Currently hardcoded to some test files.
 
+chunksum.py - Contains all the functions needed to generate proper serial chunks
+
+status.py - contains known commands, and some comments on the data coming back
+
+uploader.py - eventual upload script, still bits and pieces right now.
 
