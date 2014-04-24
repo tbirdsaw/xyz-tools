@@ -26,6 +26,17 @@ First cksum 00 08 04 23 =  525347 d
 ## Upload notes:
 Seems to have Windows LineEndinges (\cr\lf)
 
+First command with XYZ_3D@4, returns "OFFLINE_OK."
+After issuing header, returns "OFFLINE_OK.."
+Then begins sending each chunk, printer returns "CheckSumOK:PN:0."
+End of File indicated by two line endings, followed by a checksum?
+
+Header appears as follows:
+M1:MyTest,4677749,2.55.43,EE1_OK,EE2_OK         
+
+Probably something like:
+M1:<filename>,<filesize>,2.55.43,EE1_OK,EE2_OK
+
 ## Current status:
 Need to write upload/parser, and also create a header before gcode
 

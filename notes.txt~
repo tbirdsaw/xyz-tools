@@ -27,15 +27,16 @@ First cksum 00 08 04 23 =  525347 d
 Seems to have Windows LineEndinges (\cr\lf)
 
 ## Current status:
-Trying to append a checksum to a chunked file... need to figure out how to do this.
-
+Need to write upload/parser, and also create a header before gcode
 
 ## Task List:
 Create Uploader:
-	Add Header if needed
-	chunk into 10236 bytes + 4 byte checksum
+	Add Header if needed??
+	Modify GCode with davinci comments?
+	chunk into 10236 bytes + 4 byte checksum - Done
 	figure out checksum - done
-	
+	Serial handler/parser
+	???
 		
 
 
