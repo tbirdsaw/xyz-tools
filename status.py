@@ -11,7 +11,7 @@ import io; #Suggested to handle LineFeeds and buffering and whatnot
 # Parameters set for XYZ from watching the traffic
 #DEVICE = "/dev/ttyACM0"
 DEVICE='/dev/ttyACM0'
-TIMEOUT = 1
+TIMEOUT = 0.1
 BAUDRATE = 115200
 
 #Known Commands

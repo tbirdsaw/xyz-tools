@@ -24,18 +24,30 @@ First cksum 00 08 04 23 =  525347 d
 
 
 ## Upload notes:
-Seems to have Windows LineEndinges (\cr\lf)
+Seems to have Windows LineEndinges (\cr\lf) (yup)
 
 First command with XYZ_3D@4, returns "OFFLINE_OK."
-After issuing header, returns "OFFLINE_OK.."
+After issuing header (see below), returns "OFFLINE_OK.."
 Then begins sending each chunk, printer returns "CheckSumOK:PN:0."
-End of File indicated by two line endings, followed by a checksum?
+End of File indicated by two additional line endings (yup), followed by a checksum (yup)
 
 Header appears as follows:
 M1:MyTest,4677749,2.55.43,EE1_OK,EE2_OK         
 
 Probably something like:
 M1:<filename>,<filesize>,2.55.43,EE1_OK,EE2_OK
+
+Further exploration reveals:
+FILENAME is always MyTest
+FileSize is file size, with CrLf line endings (90% sure) AND the two additional line endings
+Two versions found, 2.55.43, and 1.3.49. Slicer import was 1.3.49.
+
+XYZ added only a line: 
+"; print_time = 3829" which must tell the printer how long it may take, possibly in seconds?
+However, I suspect comments may be just that, and actually ignored by the printer?
+
+
+
 
 ## Current status:
 Need to write upload/parser, and also create a header before gcode
