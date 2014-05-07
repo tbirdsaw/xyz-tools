@@ -20,5 +20,7 @@ chunksum.py - Contains all the functions needed to generate proper serial chunks
 
 status.py - contains known commands, and some comments on the data coming back
 
-uploader.py - eventual upload script, still bits and pieces right now.
+uploader.py - Working uploader script! But see caveats below!
 
+
+Currently, uploader will upload any GCode file. However, it must have DOS/Win32 line endings. Also, the filename is hard-coded right now.
