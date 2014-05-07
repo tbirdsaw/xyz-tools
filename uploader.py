@@ -14,7 +14,7 @@ offsetFile = 0;
 DEVICE='/dev/ttyACM0'
 TIMEOUT = 0.1	# We want to block the program until we get a response back
 BAUDRATE = 115200
-gcodeFile = "testfiles/test.gcode"
+gcodeFile = "testfiles/ruler.gcode"
 DEBUGMODE = 1
 SERIALENABLE = 1
 
