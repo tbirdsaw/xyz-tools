@@ -27,6 +27,7 @@ sport = serial.Serial(DEVICE,baudrate=BAUDRATE,timeout=TIMEOUT,xonxoff=1,bytesiz
 sio = io.TextIOWrapper(io.BufferedRWPair(sport,sport),newline='\n')
 
 def writeData(data):
+	print "> "+data
 	sio.write(data)
 
 def readData():
@@ -35,7 +36,7 @@ def readData():
 
 # Open our serialport
 
-print sport.isOpen();
+print "Connected: %s" % sport.isOpen();
 
 # Returns model, serial number, etc...
 writeData(unicode(MACHINE_INFO));
